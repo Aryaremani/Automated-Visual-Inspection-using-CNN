@@ -4,12 +4,16 @@ A production-ready Streamlit web application for automated bottle inspection usi
 
 ## Features
 
-- 🔍 Binary classification (Good/Defective)
-- 📊 Confidence score display
-- 🎨 Grad-CAM visualization for model interpretability
-- 🖼️ Support for JPG, JPEG, and PNG images
-- 💻 Clean and professional UI
-- ⚡ Fast inference with caching
+- Binary classification (Good/Defective)
+- Confidence score display
+- Grad-CAM visualization for model interpretability
+- Support for JPG, JPEG, and PNG images
+- Dark theme with animations
+- Fast inference with caching
+
+## Live Demo
+
+🌐 **Deployed on Streamlit Cloud:** [View App](https://automated-visual-inspection-using-cnn.streamlit.app)
 
 ## Project Structure
 
@@ -17,13 +21,14 @@ A production-ready Streamlit web application for automated bottle inspection usi
 .
 ├── app.py              # Main Streamlit application
 ├── requirements.txt    # Python dependencies
-├── model.pth          # Trained ResNet18 model (you need to provide this)
+├── packages.txt        # System dependencies
+├── model.pth          # Trained ResNet18 model
 └── README.md          # This file
 ```
 
 ## Installation
 
-1. Clone or download this project
+1. Clone this repository
 
 2. Install required packages:
 ```bash
@@ -36,12 +41,12 @@ pip install -r requirements.txt
 
 2. Run the Streamlit app:
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
-3. Open your browser and navigate to the URL shown in the terminal (typically `http://localhost:8501`)
+3. Open your browser and navigate to the URL shown in the terminal
 
-4. Upload a bottle image and click "Predict" to get results
+4. Upload a bottle image and click "Run Analysis" to get results
 
 ## Model Details
 
@@ -62,7 +67,7 @@ streamlit run app.py
 
 ## Grad-CAM Visualization
 
-Grad-CAM (Gradient-weighted Class Activation Mapping) highlights the regions of the image that influenced the model's decision. This helps understand what the model is "looking at" when making predictions.
+Grad-CAM (Gradient-weighted Class Activation Mapping) highlights the regions of the image that influenced the model's decision.
 
 - **Red/Yellow areas:** High importance for the prediction
 - **Blue/Purple areas:** Low importance for the prediction
@@ -70,33 +75,13 @@ Grad-CAM (Gradient-weighted Class Activation Mapping) highlights the regions of 
 ## Requirements
 
 - Python 3.8+
-- PyTorch 2.1.0+
-- Streamlit 1.31.0+
+- PyTorch
+- Streamlit
 - See `requirements.txt` for complete list
 
-## Troubleshooting
+## Deployment
 
-**Model not loading:**
-- Ensure `model.pth` exists in the app directory
-- Verify the model was trained with ResNet18 architecture
-- Check that the model has 2 output classes
-
-**Image upload issues:**
-- Ensure image format is JPG, JPEG, or PNG
-- Try with a different image if one fails
-
-**Performance issues:**
-- The first prediction may be slower due to model loading
-- Subsequent predictions use cached model for faster inference
-
-## Academic Use
-
-This application is suitable for academic submissions and demonstrations. It includes:
-- Clean, well-commented code
-- Professional UI design
-- Model interpretability (Grad-CAM)
-- Error handling
-- Best practices implementation
+This app is deployed on Streamlit Cloud with HTTPS and a custom domain.
 
 ## License
 
