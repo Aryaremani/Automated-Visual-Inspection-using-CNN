@@ -532,7 +532,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-=======
 """
 Automated Visual Inspection using CNN - Streamlit Web App
 A deep learning application for classifying bottle images as Good or Defective
