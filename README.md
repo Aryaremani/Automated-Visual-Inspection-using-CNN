@@ -11,6 +11,17 @@ A production-ready Streamlit web application for automated bottle inspection usi
 - Dark theme with animations
 - Fast inference with caching
 
+## Data Understanding and EDA
+
+The project uses the bottle category from the MVTec Anomaly Detection dataset. The dataset contains training images of normal bottles and test images with both normal and defective samples.
+
+Defects include:
+- broken_large
+- broken_small
+- contamination
+
+Initial exploration shows that the dataset is imbalanced, with more normal images than defective ones. Sample images and class distribution were analyzed to understand the dataset before training the model.
+
 ## Live Demo
 
 🌐 **Deployed on Streamlit Cloud:** [View App](https://automated-visual-inspection-using-cnn.streamlit.app)
