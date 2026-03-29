@@ -63,6 +63,9 @@ A pretrained ResNet18 model was used for binary classification of bottle images 
 To address class imbalance, weighted cross-entropy loss was used during training. The model was trained for multiple epochs, and performance was monitored using training loss and accuracy.  
 
 Grad-CAM was further integrated to improve interpretability by highlighting the image regions that contributed most to the model’s prediction.
+### Training Configuration
+
+The ResNet18 model was trained using transfer learning with weighted cross-entropy loss to handle class imbalance. The optimizer used was Adam, and performance was monitored across multiple epochs using loss and training accuracy.
 ## How It Works
 
 1. **Image Upload:** User uploads a bottle image (JPG/JPEG/PNG)
