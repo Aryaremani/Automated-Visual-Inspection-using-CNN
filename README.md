@@ -56,7 +56,13 @@ python -m streamlit run app.py
   - 0 = Defective
   - 1 = Good
 - **Output:** Binary classification with confidence scores
+## Model Development
 
+A pretrained ResNet18 model was used for binary classification of bottle images into **good** and **defective** classes. Transfer learning was applied by replacing the final fully connected layer with a two-class output layer.  
+
+To address class imbalance, weighted cross-entropy loss was used during training. The model was trained for multiple epochs, and performance was monitored using training loss and accuracy.  
+
+Grad-CAM was further integrated to improve interpretability by highlighting the image regions that contributed most to the model’s prediction.
 ## How It Works
 
 1. **Image Upload:** User uploads a bottle image (JPG/JPEG/PNG)
