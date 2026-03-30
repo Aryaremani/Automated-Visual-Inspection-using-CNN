@@ -74,6 +74,13 @@ A pretrained ResNet18 model was used for binary classification of bottle images 
 To address class imbalance, weighted cross-entropy loss was used during training. The model was trained for multiple epochs, and performance was monitored using training loss and accuracy.  
 
 Grad-CAM was further integrated to improve interpretability by highlighting the image regions that contributed most to the model’s prediction.
+
+## Evaluation Summary
+
+The model achieved a test accuracy of approximately 78.8%. The confusion matrix shows that all defective samples were correctly identified, achieving a recall of 1.00 for the defective class.
+
+However, some normal images were misclassified as defective, indicating that the model is conservative and prioritizes defect detection. This behavior is acceptable in industrial scenarios where detecting defects is more critical than avoiding false alarms.
+
 ### Training Configuration
 
 The ResNet18 model was trained using transfer learning with weighted cross-entropy loss to handle class imbalance. The optimizer used was Adam, and performance was monitored across multiple epochs using loss and training accuracy.
