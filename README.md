@@ -5,7 +5,7 @@ A production-ready Streamlit web application for automated bottle inspection usi
 ## Features
 
 - Binary classification (Good/Defective)
-- Confidence score display
+- confidence score display
 - Grad-CAM visualization for model interpretability
 - Support for JPG, JPEG, and PNG images
 - Dark theme with animations
