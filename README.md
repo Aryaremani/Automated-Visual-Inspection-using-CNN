@@ -11,7 +11,7 @@ A production-ready Streamlit web application for automated bottle inspection usi
 - Dark theme with animations
 - Fast inference with caching
 
-## Data Understanding and EDA
+## Data Understanding and EDA 
 
 The project uses the bottle category from the MVTec Anomaly Detection dataset. The dataset contains training images of normal bottles and test images with both normal and defective samples.
 
