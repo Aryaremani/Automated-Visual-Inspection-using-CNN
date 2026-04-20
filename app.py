@@ -152,7 +152,7 @@ def load_model(model_path="model.pth"):
         model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         
         # Set to evaluation mode
-        model.eval()
+        model.eval() 
         
         return model
     except Exception as e:
