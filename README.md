@@ -111,6 +111,9 @@ Grad-CAM (Gradient-weighted Class Activation Mapping) highlights the regions of 
 This app is deployed on Streamlit Cloud with HTTPS and a custom domain.
 https://automated-visual-inspection-using-cnn.streamlit.app/
 
+<img width="1701" height="763" alt="Screenshot 2026-04-20 222407" src="https://github.com/user-attachments/assets/0ecead95-31fa-481b-afcb-668b92407deb" />
+
+
 ## License
 
 This project is provided as-is for educational and research purposes.
